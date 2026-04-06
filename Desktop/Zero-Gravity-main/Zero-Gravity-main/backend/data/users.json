@@ -1,0 +1,218 @@
+[
+  {
+    "id": "seed-user-1",
+    "name": "Aiko Tanaka",
+    "email": "aiko@devmatch.io",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "country": "Japan",
+    "timezone": "UTC+9",
+    "bio": "Frontend dev obsessed with design systems and micro-animations. Looking for a backend partner to ship something real.",
+    "skills": [
+      "React",
+      "Next.js",
+      "Figma",
+      "TypeScript"
+    ],
+    "techStack": [
+      "JavaScript",
+      "TypeScript",
+      "HTML/CSS"
+    ],
+    "projectInterests": [
+      "Web App",
+      "DevTools",
+      "SaaS"
+    ],
+    "role": "frontend",
+    "experienceLevel": "intermediate",
+    "createdAt": "2026-04-01T10:00:00.000Z"
+  },
+  {
+    "id": "seed-user-2",
+    "name": "Carlos Rivera",
+    "email": "carlos@devmatch.io",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "country": "Brazil",
+    "timezone": "UTC-3",
+    "bio": "Full-stack engineer with 4 years building APIs and distributed systems. Love hackathons — won 3 so far.",
+    "skills": [
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "GraphQL",
+      "Docker"
+    ],
+    "techStack": [
+      "JavaScript",
+      "TypeScript",
+      "SQL",
+      "Bash/Shell"
+    ],
+    "projectInterests": [
+      "API / Backend",
+      "FinTech",
+      "Open Source"
+    ],
+    "role": "backend",
+    "experienceLevel": "advanced",
+    "createdAt": "2026-04-01T10:05:00.000Z"
+  },
+  {
+    "id": "seed-user-3",
+    "name": "Priya Sharma",
+    "email": "priya@devmatch.io",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "country": "India",
+    "timezone": "UTC+5:30",
+    "bio": "ML engineer with a focus on NLP and recommendation systems. Seeking a frontend or full-stack dev to make my models shine.",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "Scikit-learn",
+      "FastAPI"
+    ],
+    "techStack": [
+      "Python",
+      "SQL",
+      "R"
+    ],
+    "projectInterests": [
+      "AI / ML",
+      "HealthTech",
+      "EdTech"
+    ],
+    "role": "ml_ai",
+    "experienceLevel": "intermediate",
+    "createdAt": "2026-04-01T10:10:00.000Z"
+  },
+  {
+    "id": "seed-user-4",
+    "name": "Emma Müller",
+    "email": "emma@devmatch.io",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "country": "Germany",
+    "timezone": "UTC+1",
+    "bio": "DevOps & cloud architect. I make deployments boring (which is the goal). Happy to handle infra for a strong product team.",
+    "skills": [
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Terraform",
+      "GitHub Actions"
+    ],
+    "techStack": [
+      "Bash/Shell",
+      "Python",
+      "Go"
+    ],
+    "projectInterests": [
+      "DevTools",
+      "Open Source",
+      "SaaS",
+      "Cybersecurity"
+    ],
+    "role": "devops",
+    "experienceLevel": "advanced",
+    "createdAt": "2026-04-01T10:15:00.000Z"
+  },
+  {
+    "id": "seed-user-5",
+    "name": "Fatima Hassan",
+    "email": "fatima@devmatch.io",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "country": "Morocco",
+    "timezone": "UTC+0",
+    "bio": "Mobile developer with 2 years building cross-platform apps. Interested in HealthTech and Social Impact projects.",
+    "skills": [
+      "Flutter",
+      "React Native",
+      "Firebase"
+    ],
+    "techStack": [
+      "Dart",
+      "JavaScript",
+      "TypeScript"
+    ],
+    "projectInterests": [
+      "Mobile App",
+      "HealthTech",
+      "Social Impact"
+    ],
+    "role": "mobile",
+    "experienceLevel": "intermediate",
+    "createdAt": "2026-04-01T10:20:00.000Z"
+  },
+  {
+    "id": "seed-user-6",
+    "name": "Yuki Park",
+    "email": "yuki@devmatch.io",
+    "password": "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi",
+    "country": "South Korea",
+    "timezone": "UTC+9",
+    "bio": "Product-focused designer who codes. I bridge design and frontend — bringing ideas to life visually and technically.",
+    "skills": [
+      "Figma",
+      "React",
+      "CSS",
+      "Vue"
+    ],
+    "techStack": [
+      "JavaScript",
+      "HTML/CSS",
+      "TypeScript"
+    ],
+    "projectInterests": [
+      "Web App",
+      "Mobile App",
+      "Social Impact",
+      "GameDev"
+    ],
+    "role": "design",
+    "experienceLevel": "intermediate",
+    "createdAt": "2026-04-01T10:25:00.000Z"
+  },
+  {
+    "id": "280e83c0-4f9c-4afc-9c0e-d5761d959a87",
+    "name": "Sakib Ahmad",
+    "email": "ahmadsakib263@gmail.com",
+    "password": "$2a$10$tszyFGr4WTgQCmObuk2alOp8Nvy2mwOEQ1FJ/ToEXhKrHTZVFxBcK",
+    "country": "India",
+    "timezone": "",
+    "bio": "",
+    "skills": [
+      "Node.js"
+    ],
+    "techStack": [
+      "JavaScript"
+    ],
+    "projectInterests": [
+      "Web App"
+    ],
+    "role": "full_stack",
+    "experienceLevel": "beginner",
+    "createdAt": "2026-04-06T06:24:06.166Z"
+  },
+  {
+    "id": "f831ba0a-4f30-4e7d-94b9-bea0fe1171f5",
+    "name": "Adi",
+    "email": "alex.johnson@gmail.com",
+    "password": "$2a$10$2jgNJYqm3TUQrBkyKjHUL.thjykMxVKppf2r3nRKeh3mmQ6klwQwW",
+    "avatar": "AJ",
+    "country": "India",
+    "timezone": "",
+    "bio": "I'm Immortal.",
+    "skills": [],
+    "techStack": [],
+    "projectInterests": [
+      "SaaS",
+      "IoT",
+      "Open Source"
+    ],
+    "role": "full_stack",
+    "experienceLevel": "advanced",
+    "authProvider": "google",
+    "availability": "open",
+    "createdAt": "2026-04-06T10:21:04.800Z"
+  }
+]

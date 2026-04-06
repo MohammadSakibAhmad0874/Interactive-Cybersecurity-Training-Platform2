@@ -1,0 +1,213 @@
+/* ===== Meetup / Team Sync Page ===== */
+
+.meetup-page {
+  animation: fadeInUp 0.5s ease-out both;
+}
+
+/* ── Header row ── */
+.meetup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.meetup-header h1 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 2rem;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.meetup-header p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-top: 0.25rem;
+}
+
+/* ── Meetup list ── */
+.meetup-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* ── Meetup card ── */
+.meetup-card {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  padding: var(--space-xl);
+  transition: all var(--transition-base);
+  position: relative;
+  overflow: hidden;
+}
+
+.meetup-card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+
+.meetup-card:hover {
+  transform: translateX(4px);
+  border-color: rgba(108, 99, 255, 0.25);
+  box-shadow: var(--shadow-md);
+}
+
+.meetup-card:hover::after {
+  opacity: 1;
+}
+
+/* Status color variants */
+.meetup-upcoming::after { background: var(--gradient-primary); }
+.meetup-soon::after     { background: var(--gradient-warm); }
+.meetup-past::after     { background: linear-gradient(135deg, #52627a, #94a3b8); }
+
+/* ── Date badge ── */
+.meetup-card-left { flex-shrink: 0; }
+
+.meetup-date-badge {
+  width: 62px;
+  height: 62px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(108,99,255,0.15) 0%, rgba(255,77,77,0.1) 100%);
+  border: 1px solid rgba(108, 99, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  flex-shrink: 0;
+}
+
+.meetup-month {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--primary-light);
+}
+
+.meetup-day {
+  font-size: 1.4rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--text-primary);
+  font-family: var(--font-display);
+}
+
+/* ── Card body ── */
+.meetup-card-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.meetup-card-body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meetup-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.meetup-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.meetup-notes {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-glass);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  margin-top: 0.3rem;
+}
+
+/* ── Status badge ── */
+.meetup-status-badge {
+  flex-shrink: 0;
+  padding: 0.3rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+
+.status-upcoming {
+  background: rgba(108, 99, 255, 0.1);
+  border-color: rgba(108, 99, 255, 0.25);
+  color: var(--primary-light);
+}
+
+.status-soon {
+  background: rgba(255, 122, 24, 0.12);
+  border-color: rgba(255, 122, 24, 0.3);
+  color: #FF7A18;
+}
+
+.status-past {
+  background: rgba(148, 163, 184, 0.1);
+  border-color: rgba(148, 163, 184, 0.2);
+  color: var(--text-muted);
+}
+
+/* ── Form ── */
+.meetup-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .meetup-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .meetup-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+
+  .meetup-status-badge {
+    align-self: flex-start;
+  }
+}
