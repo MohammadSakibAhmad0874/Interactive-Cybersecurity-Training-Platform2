@@ -1,0 +1,15 @@
+{
+  "name": "cyber-attack-simulation-lab",
+  "version": "1.0.0",
+  "description": "Cyber Attack Simulation Lab – Interactive Cybersecurity Training Platform",
+  "scripts": {
+    "dev:backend":  "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "install:all":  "npm --prefix backend install && npm --prefix frontend install",
+    "build:frontend": "npm --prefix frontend run build",
+    "start": "npm --prefix backend start"
+  },
+  "keywords": ["cybersecurity", "education", "simulation", "sqlite"],
+  "author": "",
+  "license": "MIT"
+}

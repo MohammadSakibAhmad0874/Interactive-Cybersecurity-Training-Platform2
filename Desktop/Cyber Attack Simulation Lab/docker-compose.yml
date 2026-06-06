@@ -1,0 +1,61 @@
+# ═══════════════════════════════════════════════════════════════════
+# Cyber Attack Simulation Lab — Docker Compose
+# One command setup: docker-compose up --build
+# ═══════════════════════════════════════════════════════════════════
+
+version: '3.9'
+
+services:
+  # ── Backend API ─────────────────────────────────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: casl-backend
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 5000
+      JWT_SECRET: ${JWT_SECRET:-cyberlab_super_secret_change_in_prod_2024}
+      JWT_EXPIRES_IN: 7d
+      DB_PATH: /app/data/cyber_lab.db
+      FRONTEND_URL: http://localhost:80
+      RATE_LIMIT_WINDOW_MS: 900000
+      RATE_LIMIT_MAX: 100
+    volumes:
+      - sqlite_data:/app/data
+    networks:
+      - casl-network
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:5000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+  # ── Frontend SPA ─────────────────────────────────────────────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: casl-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - casl-network
+
+# ── Volumes ──────────────────────────────────────────────────────
+volumes:
+  sqlite_data:
+    driver: local
+    name: casl-sqlite-data
+
+# ── Networks ─────────────────────────────────────────────────────
+networks:
+  casl-network:
+    driver: bridge
+    name: casl-network
